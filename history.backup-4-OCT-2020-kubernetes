@@ -1,0 +1,1016 @@
+    1  TMOUT=0
+    2  fdfd
+    3  yum install git bash-completion
+    4  ls
+    5  cd .kube
+    6  ls
+    7  cd cka/
+    8  ls
+    9  cat setup-kubetools.sh 
+   10  cat setup-kubetools.sh  | grep kube
+   11  find / -iname kube
+   12  sudo find / -iname kube
+   13  ls
+   14  cd .kube
+   15  ls
+   16  cd /home/cloud_user/
+   17  ls
+   18  ls -ltr
+   19  history | les
+   20  history | less
+   21  exit
+   22  cd /home/cloud_user/
+   23  ls
+   24  cd .kube/
+   25  ls
+   26  mv admin.conf config
+   27  sudo mv admin.conf config
+   28  ls
+   29  less config 
+   30  kubectl cluster-info
+   31  kubectl cluster-info dump
+   32  ls
+   33  cd ..
+   34  ls
+   35  kubectl cluster-info
+   36  kubectl cluster-info dump >> cluster_info.dump
+   37  less cluster_info.dump 
+   38  kubectl get nodes
+   39  hostnamectl set controller
+   40  hostnamectl controller
+   41  hostnamectl set-hostname controller
+   42  sudo hostnamectl set-hostname controller
+   43  exit
+   44   kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+   45  kubectl get pdos
+   46  kubectl get pods
+   47  kubectl get pods --all-namespaces
+   48  su root
+   49  sudo su
+   50  kubectl get nodes
+   51  right now we have One node cluster, 
+   52  status of the master is in ready
+   53  kubectl get nodes
+   54  su 
+   55  su
+   56  sudo su
+   57  kubectl get nodes
+   58  sudo systemctl status kubelet
+   59  exit
+   60  sudo su 
+   61  sudo su
+   62  kubectl get nodes
+   63  kubectl cluster-info
+   64  cd /home/cloud_user/
+   65  ls
+   66  cd .kube/
+   67  ls
+   68  less config 
+   69  kubeadm init
+   70  sudo kubeadm init
+   71  sudo systemctl status docker
+   72  systemctl start docker
+   73  sudo su
+   74  kubectl get nodes
+   75  ssh shrabonidey12082c.mylabserver.com
+   76  kubectl cluster-info
+   77  ip a| grep inet
+   78  kubectl  get pods --all-namespaces
+   79  systemctl enable docker
+   80  sudo systemctl enable docker
+   81  kubectl get pods --all-namespaces
+   82  kubectl get nodes
+   83  ssh-keygen
+   84  ssh-copy-id shrabonidey12082c.mylabserver.com
+   85  ssh shrabonidey12082c.mylabserver.com
+   86  ssh-copy-id shrabonidey12083c.mylabserver.com
+   87  ssh shrabonidey12083c.mylabserver.com
+   88  ssh shrabonidey12082c.mylabserver.com
+   89  xit
+   90  exit
+   91  bash
+   92  kubectl get nodes
+   93  sudo su 
+   94  ssh worker1
+   95  clewar
+   96  clear
+   97  kubectl run nginx1 --image=nginx --replicas=2
+   98  kubectl get pods
+   99  kubectl get pods --all-namespaces
+  100  kubectl get pods
+  101  kubectl get events
+  102  kubectl get pods
+  103  kubectl delete deployment nginx1
+  104  kubectl delete pod nginx1
+  105  kubectl get pods --all-namespaces
+  106  kubectl get po
+  107  kubectl create deployment --image=nginx
+  108  'kubectl create deployment -h
+  109  kubectl create deployment -h
+  110  kubectl create deployment my-dep --image=nginx --replicas=3
+  111  kubectl get pods
+  112  kubectl get nodes
+  113  ssh shrabonidey12082c.mylabserver.com
+  114  kubectl get nodes
+  115  sudo systemctl status docker
+  116  kubectl get nodes
+  117  systemctl status kubelet
+  118  kubectl get nodes
+  119  systemctl status kubelet kube-scheduler
+  120  cd /etc/systemd/system/
+  121  ls
+  122  ls -ltr
+  123  kubectl get nodes
+  124  ssh shrabonidey12082c.mylabserver.com
+  125  kubectl get pods
+  126  kubectl get nodes
+  127  ssh shrabonidey12083c.mylabserver.com
+  128  kubectl get nodes
+  129  kubectl get pods
+  130  kubectl delete deployment my-dep
+  131  kubectl get pdos
+  132  kubectl get pods
+  133  kubectl create deployment my-dep --image=nginx
+  134  kubectl get pods
+  135  kubectl get nodes
+  136  kubectl describe nodes
+  137  kubectl describe node  kubectl describe node shrabonidey12083c.mylabserver.com
+  138  kubectl describe node shrabonidey12083c.mylabserver.com
+  139  kubeadm reset
+  140  ssh shrabonidey12083c.mylabserver.com
+  141  kubectl get nodes
+  142  ssh shrabonidey12083c.mylabserver.com
+  143  kubectl get nodes
+  144  ssh shrabonidey12082c.mylabserver.com
+  145  systemctl get nodes
+  146  kubectl get nodes
+  147  sudo hostnamectl set-hostname shrabonidey12081c.mylabserver.com
+  148  cd /usr/bin/
+  149  ls
+  150  ls | grep kubelet
+  151  which kubelet
+  152  ls | grep kube
+  153  sudo systemctl restart kubelet
+  154  kubectl get nodes
+  155  restart
+  156  sudo shutdown -r now
+  157  kubectl get nodes
+  158  kubectl create deployment my-dep --image=nginx
+  159  kubectl get pods
+  160  kubectl get nodes
+  161  kubectl get pods
+  162  kubectl expose deployment my-dep --name=nginx --type NodePort --port 80
+  163  kubeclt get svc
+  164  kubectl get svc
+  165  curl 10.99.205.86:31107
+  166  curl 10.99.205.86:90
+  167  curl -I 10.99.205.86:90
+  168  kubectl delete service nginx
+  169  kubectl expose deployment my-dep --port=80 --type=LoadBalancer
+  170  kubectl get svc
+  171  curl -I 10.103.98.67 30699
+  172  curl -I 10.103.98.67 :0699
+  173  curl -I 10.103.98.67 0699
+  174  curl -I 10.103.98.67:30699
+  175  curl -I 10.103.98.67
+  176  curl 10.103.98.67:80
+  177  curl -I 10.103.98.67:80
+  178  kubectl get pods
+  179  kubectl -h
+  180  kubectl scale -h
+  181  kubectl get deployment
+  182  kubectl scale --replicas=3 deployment/mydep
+  183  kubectl scale --replicas=3 deployment/my-dep
+  184  kubectl get pdos
+  185  kubectl get pods
+  186  kubectl get svc
+  187  kubectl delete pods my-dep-5b7868d854-9mnt4
+  188  kubectl get pods
+  189  kubectl get deployments
+  190  docker ps
+  191  sudo docker ps
+  192  clear
+  193  kubectl get nodes
+  194  kubectl get pods
+  195  kubectl get svc
+  196  curl 10.103.98.67:80
+  197  curl -I 10.103.98.67:30699
+  198  curl -I 10.103.98.67:80
+  199  curl -I 10.103.98.67
+  200  curl 10.103.98.67
+  201  history | grep node
+  202  history | grep expose
+  203  kubectl get nodes
+  204  kubectl config -h
+  205  kubectl config view
+  206  kubectl cluster-info
+  207  kubectl cluster-info dump | less
+  208  kubectl config view
+  209  kubectl auth can-i
+  210  kubectl auth can-i create deployment
+  211  kubectl auth can-i create deployment as ling
+  212  kubectl auth can-i create deployment as --user lings
+  213  kubectl auth can-i create deployment --all sravan
+  214  kubectl auth can-i create deployment --as sravan
+  215  kubectl auth can-i create deployment --as root
+  216  kubectl api-resources
+  217  kubectl cluster-info
+  218  docke rps
+  219  docker ps
+  220  sudo docker ps
+  221  kubectl get pods
+  222  kubectl get nodes
+  223  kubectl auth can-i create deployments
+  224  kubectl auth can-i create deployments as linda
+  225  kubectl auth can-i create deployments --as linda
+  226  kubectl auth can-i create deployments --as sravan
+  227  adduser sravan
+  228  useradd sravan
+  229  sudo useradd sravan
+  230  passwd sravan
+  231  sudo passwd sravan
+  232  passwd -l sravan
+  233  sudo passwd -l sravan
+  234  sudo passwd -u sravan
+  235  man passwd
+  236  sudo passwd -S sravan
+  237  TMOUT=0
+  238  passwd
+  239  sravan
+  240  passwd
+  241  sravan
+  242  sudo echo "sravan" | passwd --stdin
+  243  uptime
+  244  kubectl get nodes
+  245  kubectl api-resourses
+  246  kubeclt api-resources
+  247  kubectl api-resources
+  248  kubectl api-resources | less
+  249  kubectl -h 
+  250  kubectl -h  | less
+  251  kubectl completion bash
+  252  kubectl completion bash > /etc/bash_completion.d/kubectl
+  253  sudo kubectl completion bash > /etc/bash_completion.d/kubectl
+  254  sudo su -
+  255  kubectl get nodes shrabonidey1208
+  256  kubectl get nodes 
+  257  kubectl bash completin
+  258  kubectl bash completion
+  259  kubectl bash-completion
+  260  kubectl completion bash 
+  261  kubectl api-resources
+  262  kubectl api-resources| less
+  263  kubectl explain pods
+  264  ip a| grep inet
+  265  kubectl explain pods | less
+  266  kubectl explain nodes
+  267  kubectl api-versions
+  268  kubectl config view
+  269  kubectl create deployment -image=nginx
+  270  kubectl create deployment i-image=nginx
+  271  kubectl create deployment --image=nginx
+  272  clear
+  273  uptime
+  274  pwd
+  275  ls
+  276  cd cka/
+  277  ls
+  278  ls | grep busybox.yaml 
+  279  less busybox
+  280  less busybox.yaml 
+  281  cat busybox.yaml 
+  282  vi busybox.yaml 
+  283  cp busybox.yaml busybox_Sravan.yaml
+  284  sudo cp busybox.yaml busybox_Sravan.yaml
+  285  vi busybox_Sravan.yaml 
+  286  pwd
+  287  ls
+  288  ls -ltr
+  289  cd ..
+  290  ls
+  291  ls -ltr
+  292  chown sravan:sravan -R cka/
+  293  sudo chown sravan:sravan -R cka/
+  294  ls -ltr
+  295  chown cloud_user:cloud_user -R cka/
+  296  sudo chown cloud_user:cloud_user -R cka/
+  297  ls -ltr
+  298  cd cka/
+  299  ls -ltr
+  300  vim busybox_Sravan.yaml 
+  301  kubectl create -f busybox_Sravan.yaml 
+  302  kubectl get pods
+  303  kubectl get pods --all-namespaces
+  304  kubectl get pdos
+  305  kubectl get pods
+  306  kubectl get deployments.apps 
+  307  kubectl get deployments
+  308  kubectl get events
+  309  kubectl get pods
+  310  kubectl describe pods busybox2
+  311  docker ps
+  312  sudo docker ps
+  313  sudo docker ps -a
+  314  kubectl explain pods
+  315  cat busybox_Sravan.yaml 
+  316  76ea775f35db        538929063f23           "kube-controller-m..."   6 hours ago         Up 6 hours                              k8s_kube-controller-manager_kube-controller-manager-shrabonidey12081c.mylabserver.com_kube-system_aa0592e2b65e174dc9fec0d29ca384db_6
+  317  2ede3bf0e1ee        0369cf4303ff           "etcd --advertise-..."   6 hours ago         Up 6 hours                              k8s_etcd_etcd-shrabonidey12081c.mylabserver.com_kube-system_e60742a7754081898bb657fe05695a94_6
+  318  043a6e65ea60        ce0df89806bb           "kube-apiserver --..."   6 hours ago         Up 6 hours                              k8s_kube-apiserver_kube-apiserver-shrabonidey12081c.mylabserver.com_kube-system_89df29c44e2ed93db0336c3a2a23f7ee_6
+  319  67f9fdfdcabf        49eb8a235d05           "kube-scheduler --..."   6 hours ago         Up 6 hours                              k8s_kube-scheduler_kube-scheduler-shrabonidey12081c.mylabserver.com_kube-system_d8964234650b330c55fcf8fb2f5295dd_6
+  320  b2517f2bb66b        k8s.gcr.io/pause:3.2   "/pause"                 6 hours ago         Up 6 hours                              k8s_POD_kube-controller-manager-shrabonidey12081c.mylabserver.com_kube-system_aa0592e2b65e174dc9fec0d29ca384db_6
+  321  d712b6c8b370        k8s.gcr.io/pause:3.2   "/pause"                 6 hours ago         Up 6 hours                              k8s_POD_kube-scheduler-shrabonidey12081c.mylabserver.com_kube-system_d8964234650b330c55fcf8fb2f5295dd_6
+  322  dea2412968c5        k8s.gcr.io/pause:3.2   "/pause"                 6 hours ago         Up 6 hours                              k8s_POD_kube-apiserver-shrabonidey12081c.mylabserver.com_kube-system_89df29c44e2ed93db0336c3a2a23f7ee_6
+  323  kubectl explain pods
+  324  cat busybox_Sravan.yaml 
+  325  kubectl explain pods.spec
+  326  cat busybox_Sravan.yaml 
+  327  kubectl explain pods.spec | less
+  328  kubectl explain pods.spec.container | less
+  329  kubectl explain pods.spec.containers | less
+  330  clear
+  331  kubectl get nodes
+  332  kubectl get pods
+  333  kubectl get events
+  334  kubectl get pods
+  335  kubectl delete pods busybox2
+  336  kubectl get pods
+  337  ls
+  338  cd cka/
+  339  cd ..
+  340  kubectl create -f cka/busybox_Sravan.yaml 
+  341  kubectl proxy --port=8001 &
+  342  curl http://localhost:8001
+  343  curl http://localhost:8001/version
+  344  kubectl --version
+  345  kubectl version
+  346  curl http://localhost:8001/api/v1
+  347  curl http://localhost:8001/version
+  348  curl http://localhost:8001/api/v1/namespaces/default/pods
+  349  curl http://localhost:8001/api/v1/namespaces/default/pod
+  350  curl http://localhost:8001/api/v1/namespaces/default/pods
+  351  curl http://localhost:8001/api/v1/namespaces/default/pods | less
+  352  kubectl get pods -o yaml
+  353  curl http://localhost:8001/api/v1/namespaces/default/pods | less
+  354  curl http://localhost:8001/api/v1/namespaces/default/pods/busybox
+  355  kubectl get pods
+  356  curl http://localhost:8001/api/v1/namespaces/default/pods/busybox2
+  357  curl http://localhost:8001/api/v1/namespaces/default/pods/busyb
+  358  curl http://localhost:8001/api/v1/namespaces/default/pods/busybox2
+  359  curl http://localhost:8001/api/v1/namespaces/default/pods/busybox2 | less
+  360  curl -XDELETE http://localhost:8001/api/v1/namespaces/default/pods/busybox2
+  361  kubectl get pods
+  362  sudo yum provices */etcdctl
+  363  sudo su
+  364  etcdctl 
+  365  clear
+  366  exit
+  367  kubectl get nodes
+  368  kubectl get pods
+  369  history
+  370  etcdctl -h
+  371  etcdctl -h | less
+  372   ETCDCTL_API=3
+  373  etcdctl -h | less
+  374  etcdctl2 -h | less
+  375  q
+  376  kubectl get ns
+  377  history
+  378  kubectl get all --all-namespaces
+  379  kubectl get nodes
+  380  kubectl get ns
+  381  kubectl get all --all-namespaces
+  382  clear
+  383  TMOUT=0
+  384  kubectl get nodes
+  385  kubectl get nodes -o yaml
+  386  kubectl get pods
+  387  kubectl get pods -o yaml
+  388  kubectl get pods -o yaml | less
+  389  kubectl get pods -o yaml | wc
+  390  kubectl get nodes -o yaml | wc
+  391  kubectl get all
+  392  kubectl create deployment --image=nginx newnginx
+  393  kubectl get events
+  394  kubectl get all
+  395  kubectl delete replicasets.apps newnginx-757c575454 
+  396  kubectl get all
+  397  kubectl get deployments
+  398  kubectl get deployments newnginx -o yaml | less
+  399  kubectl create deployment -h
+  400  kubectl create deployment -h | less
+  401  kubectl create deployment --dry-run --image=nginx --output=yaml > newdeploy.yaml
+  402  kubectl create deployment --dry-run --image=nginx newnginx1 --output=yaml > newdeploy.yaml
+  403   ls -ltr
+  404  less newdeploy.yaml
+  405  vi newdeploy.yaml 
+  406  kubectl create deployment --dry-run=client --image=nginx newnginx1 --output=yaml > newdeploy1.yaml
+  407  ls -ltr
+  408  diff newdeploy.yaml newdeploy1.yaml 
+  409  vi newdeploy1.yaml 
+  410  kubectl create -f newdeploy1.yaml 
+  411  kubectl get pods
+  412  kubectl get all
+  413  kubectl get pods
+  414  kubectl delete pods newnginx1-89dc96c75-72j4j
+  415  kubectl get pods
+  416  kubectl get events
+  417  kubectl get events | less
+  418  kubectl get deployments
+  419  kubectl get deployments.apps 
+  420  kubectl scale deployment newnginx --replicas=3
+  421  kubectl get deployments.apps 
+  422  kubectl get pods
+  423  kubectl get deployments.apps 
+  424  kubectl get all
+  425  kubectl edit deployments.apps newnginx
+  426  kubectl get deployments.apps 
+  427  kubectl get pods
+  428  kubectl get pods | grep newnginx
+  429  kubectl get pods | grep -o newnginx
+  430  kubectl get pods | grep -ocnewnginx
+  431  kubectl get pods | grep -c newnginx
+  432  kubectl get pods | grep -w newnginx
+  433  kubectl get pods | grep -w newnginx1
+  434  kubectl get deployments.apps 
+  435  echo labels
+  436  kubectl get deployments.apps --show-labels 
+  437  TMOUT=0
+  438  kubectl get nodes
+  439  kubectl get pods
+  440  kubectl get deployments
+  441  kubectl get labels
+  442  kubectl get deployments
+  443  history | less
+  444  kubectl get deployments --show-lables
+  445  kubectl get deployments --show-labels
+  446  kubectl label deployments.apps newnginx state=demo
+  447  kubectl get deployments --show-labels
+  448   kubectl get deployments.apps --selector state=demo
+  449   kubectl get deployments.apps --selector state
+  450   kubectl get deployments.apps --selector demo
+  451  kubectl get all --selector app=newnginx
+  452  kubectl get deployments
+  453  kubectl get pdos
+  454  kubectl get pods
+  455  kubectl run nginx --image=nginx --replicas=3
+  456  kubectl get pods
+  457  kubectl get deployments
+  458  kubectl get deployments --show-lables
+  459  kubectl get deployments --show-label
+  460  kubectl get deployments --show-labels
+  461  kubectl get pods
+  462  kubectl describe pods nginx
+  463  kubectl describe pods nginx | less
+  464  kubectl get pods --show-label
+  465  kubectl get pods --show-labels
+  466  kubectl label pods nginx run-
+  467  kubectl get pods
+  468  kubectl get pods --show-label
+  469  kubectl get pods --show-labels
+  470  kubectl delete pods nginx
+  471  kubectl label pods my-dep-5b7868d854-hsl99 app-
+  472  kubectl get pods
+  473  kubectl get pods --show-labels
+  474  kubectl get deployments --show-labels
+  475  kubectl get deployments.apps -h
+  476  kubectl get deployments.apps -h | less
+  477  kubectl get deployments --show-labels
+  478  kubectl get pods --show-labels
+  479  kubectl describe deployments.apps my-dep
+  480  kubectl describe deployments.apps my-dep  less
+  481  kubectl describe deployments.apps my-dep | less
+  482  kubectl get deployments.apps 
+  483  kubectl get deployments.apps newnginx -o yaml | less
+  484  kubectl get deployments.apps newnginx1 -o yaml | less
+  485  kubectl explain deployments.spec.strategy
+  486  kubectl explain deployments.spec.strategy.rollingUpdate
+  487  kubectl rollout -h
+  488  ls
+  489  cd cka/
+  490  ls
+  491  vi rolling.yaml 
+  492  cd ..
+  493  kubectl create deployment --image=nginx nginx --dry-run
+  494  TMOUT=0
+  495  kubectl get deployments
+  496  ls
+  497  kubectl create deployment --image=nginx nginx --dry-run=client --output > nginx_deploy.yaml
+  498  history | grep dry
+  499  kubectl create deployment --image=nginx nginx --dry-run=client --output=yaml > nginx_deploy.yaml
+  500  ls -ltr
+  501  cat nginx_deploy.yaml
+  502  vi nginx_deploy.yaml 
+  503  kubectl create -f nginx_deploy.yaml 
+  504  kubectl get pods
+  505  kubectl get pods --show-lables
+  506  kubectl get pods --show-labels
+  507  cd cka/
+  508  ls
+  509  cat rolling.yaml 
+  510  kubectl rollout history deployment 
+  511  kubectl create -f rolling.yaml 
+  512  kubectl rollout history
+  513  kubectl rollout history deployment 
+  514  kubectl get pods
+  515  kubectl get deployments.apps 
+  516  kubectl rollout history deployment 
+  517  kubectl edit deployments.apps rolling-nginx 
+  518  kubectl get pods
+  519  kubectl get deployments.apps 
+  520  kubectl get all
+  521  kubectl get replicasets.apps 
+  522  kubectl describe deployments.apps rolling-nginx 
+  523  kubectl describe deployments.apps rolling-nginx  | less
+  524  history | less
+  525  less rolling.yaml 
+  526  kubectl rollout dev-role.yaml 
+  527  kubectl rollout deployments
+  528  less rolling.yaml 
+  529  history | less
+  530  kubectl rollout history deployment 
+  531  kubectl edit deployments.apps nginx 
+  532  kubectl edit deployments.apps rolling-nginx 
+  533  kubectl edit deployments.apps nginx
+  534  kubectl edit deployments.apps rolling-nginx 
+  535  kubectl edit deployments.apps nginx
+  536  kubectl get pods
+  537  kubectl get pods | grep -w nginx
+  538  kubectl get pods | grep -w nginx | grep -v rol
+  539  inx-6799fc88d8-7hxhp           1/1     Running             0          14m
+  540  nginx-6799fc88d8-bghfp           1/1     Running             0          14m
+  541  kubectl rollout history deployment 
+  542  kubectl rollout history deployment nginx --revision=1
+  543  kubectl rollout history deployment nginx --revision=2
+  544  kubectl rollout history deployment nginx
+  545  kubectl rollout history deployment nginx 1
+  546  kubectl rollout history deployment nginx --revision 2
+  547  kubectl describe deployments.apps nginx 
+  548  kubectl rollout undo deployment nginx --to-revision=1
+  549  kubectl get pods | grep -w nginx
+  550  kubectl describe deployments.apps nginx
+  551  kubectl get pods | grep -w nginx
+  552  kubectl describe deployments.apps nginx | less
+  553  inx:
+  554      Image:        nginx:1.12
+  555  kubectl get pods | grep -w nginx
+  556  kubectl rollout history deployment nginx
+  557  history | less
+  558  kubectl get nodes
+  559  kubectl get pods
+  560  kubectl get deployments.apps 
+  561  kubectl get deployments --all-namespaces
+  562  kubectl get deployments --all-namespaces --show-labels
+  563  kubectl get pods -o yaml
+  564  TMOUT=0
+  565  man until
+  566  until
+  567  until -h
+  568  man until
+  569  sudo yum provides */unitl
+  570  sudo yum provides */until
+  571  df -h
+  572  dsate
+  573  date
+  574  df -h
+  575  vgs
+  576  sudo vgs
+  577  lvs
+  578  df -h
+  579  kubectl get nodes
+  580  ssh shrabonidey12082c.mylabserver.com
+  581  kubectl get nodes
+  582  ssh shrabonidey12083c.mylabserver.com
+  583  kubectl get nodes
+  584  ssh shrabonidey12083c.mylabserver.com
+  585  kubectl get nodes
+  586  kubeadm token list
+  587  sudo su
+  588  kubectl get nodes
+  589  kubectl get nodes shrabonidey12085c.mylabserver.com
+  590  kubectl get nodes
+  591  kubectl  get nodes
+  592  ssh-copy-id shrabonidey12085c.mylabserver.com
+  593  ssh shrabonidey12085c.mylabserver.com
+  594  kubectl get pods
+  595  kubectl get nodes
+  596  kubectl get pods --all-namespaces -o wide --field-selector spec.nodeName=shrabonidey12085c.mylabserver.com
+  597  kubectl get pods --all-namespaces -o wide --field-selector spec.nodeName=shrabonidey12082c.mylabserver.com
+  598  kubectl get pods --all-namespaces -o wide --field-selector spec.nodeName=shrabonidey12083c.mylabserver.com
+  599  kubectl get pods --all-namespaces -o wide --field-selector=shrabonidey12081c
+  600  kubectl get pods --all-namespaces -o wide --field-selector=shrabonidey12082c
+  601  TMOUT=0
+  602  kubectl get nodes
+  603  ls
+  604  cd cka/
+  605  ls
+  606  vi init1.yaml 
+  607  kubectl create -f init1.yaml 
+  608  kubectl get pods
+  609  sudo su
+  610  kubectl get nodes
+  611  kubectl get pods
+  612  cd cka/
+  613  ls
+  614  cat init1.yaml 
+  615  until nslookup myservice
+  616  until ping google.com; sleep 1; done
+  617  kubectl get pods
+  618  kubectl expose -h | less
+  619  kubectl expose nginx --port=80 --name=myservice
+  620  kubectl get deployments
+  621  kubectl expose deployment nginx --port 80 --name=myservice
+  622  kubectl get service
+  623  kubectl get svc
+  624  kubectl get pods
+  625  cat init-container.yaml 
+  626  vi init-container.yaml 
+  627  kubectl create -f init-container.yaml 
+  628  kubectl get pods
+  629  cat init2.yaml 
+  630  kubectl expose -h | less
+  631  kubectl expose deployment nginx --port 80 --name=myservice --dry-run=client --output=yaml
+  632  kubectl get pods
+  633  vim stateful.yaml 
+  634  ls | grep -i daem
+  635  vi daemonset-fluentd.yaml 
+  636  kubectl get pods
+  637  TMOUT=0
+  638  kubectl create -f daemonset-fluentd.yaml
+  639  kubectl get pods
+  640  kubectl get daemonsets.apps 
+  641  kubectl get daemonsets.apps -n kube-system 
+  642  kubectl get pods
+  643  vi daemonset-fluentd.yaml 
+  644  kubectl get pods
+  645  kubectl get pods -n kube-systems
+  646  kubectl get pods -n kube-system
+  647  kubectl get pods
+  648  kubectl get pods --all-namespaces
+  649  sudo docker ps
+  650  sudo docker ps | grep elas
+  651  kubectl get nodes
+  652  kubectl create deployment --image=nginx nginx-everynode --dry-run=client --output=yaml
+  653  cp daemonset-fluentd.yaml lab5-nginx.yaml
+  654  vi lab5-nginx.yaml 
+  655  cat lab5-nginx.yaml 
+  656  kubectl create -f lab5-nginx.yaml 
+  657  kubectl get all
+  658  kubectl get pods -o wide
+  659  kubectl get pods -o wide --show-labels
+  660  kubectl get pods -o wide
+  661  kubectl get pods -o wide -n kube-systems
+  662  kubectl get pods -o wide -n kube-system
+  663  vi lab5-nginx.yaml 
+  664  kubectl get nodes
+  665  ssh shrabonidey12082c.mylabserver.com
+  666  kubectl get nodes | awk '{print $1}'
+  667  kubectl get nodes | awk '{print $1}' | grep -v NAME
+  668  ssh shrabonidey12082c.mylabserver.com "hostname"
+  669  kubectl get nodes | awk '{print $1}' | grep -v NAME
+  670  kubectl get nodes | awk '{print $1}' | grep -v NAME | grep -v 81
+  671  for i in `kubectl get nodes | awk '{print $1}' | grep -v NAME | grep -v 81`;do ssh $i "sudo shutdown -h now";done
+  672  for i in `kubectl get nodes | awk '{print $1}' | grep -v NAME | grep -v 81`;do ssh $i;sudo shutdown -h now";done
+  673  for i in `kubectl get nodes | awk '{print $1}' | grep -v NAME | grep -v 81`;do ssh $i;sudo shutdown -h now;done
+  674  TMOUT=0
+  675  kubectl get nodes
+  676  uptme
+  677  uptime
+  678  kubectl get nodes 
+  679  kubectl get pods
+  680  kubectl get pods -o wide
+  681  kubectl exec -h
+  682  kubectl exec -h | less
+  683  kubectl explain pods | less
+  684  kubectl explain pods.specs | les
+  685  kubectl explain pods.specs | less
+  686  kubectl explain pods.spec | less
+  687  kubectl explain pods.spec.volumes | less
+  688  cd cka/
+  689  ls
+  690  ls | grep -i volum
+  691  ls -ltr
+  692  cd ..
+  693  ls
+  694  cd cka/
+  695  ls
+  696  cd ..
+  697  git pull https://github.com/sandervanvugt/kubernetes
+  698  history | grep pull
+  699  git pull https://github.com/sandervanvugt/kubernetes.git
+  700  sudo su
+  701  kubectl get nodes
+  702  ssh shrabonidey12082c.mylabserver.com
+  703  history | grep sander
+  704  ssh shrabonidey12082c.mylabserver.com
+  705  ls
+  706  git clone https://github.com/sandervanvugt/kubernetes
+  707  ls
+  708  cd kubernetes/
+  709  ls
+  710  vi basicvolume.yaml 
+  711  grep -r centos *
+  712  vi volumes.yaml 
+  713  vi morevolumes.yaml 
+  714  vim morevolumes.yaml 
+  715  cd ../cka
+  716  cp /home/cloud_user/kubernetes/morevolumes.yaml sharedvolume.yaml
+  717  vi sharedvolume.yaml 
+  718  kubectl create -f sharedvolume.yaml 
+  719  kubectl get pods
+  720  kubectl get pods | gre shared
+  721  kubectl get pods | grep shared
+  722  kubectl get pods -o wide | grep shared
+  723  kubectl get pods
+  724  kubectl get pods -o wide | grep shared
+  725  kubectl exec -it sharedvolume -- /bin/bash
+  726  kubectl get pods -o wide | grep shared
+  727  kubectl exec it sharedvolume -c centos2 -- ls /centos2
+  728  kubectl exec -it sharedvolume -c centos2 -- ls /centos2
+  729  uptime
+  730  kubectl get pods
+  731  ls ../kubernetes/pv.yaml 
+  732  cat ../kubernetes/pv.yaml
+  733  TMOUT=0
+  734  kubeget get pods | grep share
+  735  kubectl get pods | grep share
+  736  ls
+  737  cd cka/
+  738  ls
+  739  ls -l  |grep pv
+  740  cd ../kubernetes/
+  741  ls
+  742  cat pvc.yaml 
+  743  ls | grep pv
+  744  vi pv.yaml 
+  745  cat pv.yaml 
+  746  cat pv.yaml \n
+  747  cat pv.yaml
+  748  kubectl create -f pv.yaml
+  749  kubectl get pv
+  750  kubectl explain pods
+  751  kubectl explain pods | grep vol
+  752  kubectl explain pv
+  753  kubectl explain pv.spec
+  754  cat pv.yaml 
+  755  kubectl explain pv.spec.accessModes
+  756  kubectl explain pv.spec.storageClassname
+  757  cat pv-nfs.yaml 
+  758  cat pv.yaml 
+  759  kubectl create -f pv-nfs.yaml 
+  760  vi pv-nfs.yaml 
+  761  kubectl create -f pv-nfs.yaml 
+  762  kubectl get pv
+  763  cat pvc.yaml 
+  764  kubectl create -f pvc.yaml 
+  765  kubectl get pvc
+  766  vim nfs-pvc.yaml 
+  767  cat nfs-pv.yaml 
+  768  cat nfs-pvc.yaml 
+  769  cat pv.yaml 
+  770  cat pv-nfs.yaml 
+  771  kubectl get pv
+  772  kubectl get pvs
+  773  kubectl get pvc
+  774  kubectl get pv
+  775  cat pvc.yaml 
+  776  cat pv.yaml 
+  777  pacity:
+  778      storage: 2Gi
+  779    accessModes:
+  780      - ReadWriteOnce
+  781    hostPath:
+  782  cat pvc.yaml 
+  783  cat pv.yaml 
+  784   kubectl get pvc
+  785  cat nfs-pvc.yaml 
+  786  kubectl create -f nfs-pvc.yaml 
+  787  kubectl  get pvc
+  788  kubectl  get pv
+  789  kubectl  get pvc
+  790  kubectl  get pv
+  791  cat pv.yaml 
+  792  cat pvc.yaml 
+  793  kubectl get pv
+  794  cat pv-pod.yaml 
+  795  cat pv.yaml 
+  796  kubectl get pv
+  797  kubectl get pvc
+  798  cat pvc.yaml 
+  799  cat pv.yaml 
+  800  kubectl get pv
+  801  kubectl get pvc
+  802  cat pv.yaml 
+  803  cat pvc.yaml 
+  804  cat pv-pod.yaml 
+  805  kubectl create -f pv-pod.yaml 
+  806  kubectl get pods
+  807  kubectl describe pod pv-pod
+  808  kubectl describe pod pv-pod | less
+  809  cat pv-pod.yaml 
+  810  kubectl exec -it pv-pod -- cat /usr/share/nginx/html
+  811  kubectl exec -it pv-pod -- cat /usr/share/nginx/html/*
+  812  kubectl exec -it pv-pod -- cat /usr/share/nginx/html/index.html
+  813  kubectl exec -it pv-pod -- /bin/bash
+  814  kubectl get pv pv-volume -o yaml
+  815  TMOUT=0
+  816  kubectl get nodes shrabonidey1208
+  817  kubectl get nodes 
+  818  kubectl get nodes -o wide
+  819  kubectl get nodes -o yaml
+  820  kubectl get nodes -o wide | less
+  821  kubectl get nodes -o wide >> /tmp/nodes.yaml
+  822  less /tmp/nodes.yaml
+  823  kubectl get nodes -o yaml | less
+  824  hello i was wondering 
+  825  cd cka/
+  826  ls
+  827  vim nginx-custom-config.conf 
+  828  kubectl create cm nginx-cm --from-file nginx-custom-config.conf 
+  829  cat nginx-custom-config.conf 
+  830  ls -l /usr/share/nginx/html
+  831  kubectl get cm
+  832  kubectl get cm nginx-cm -o yaml
+  833  vim nginx-cm.yml 
+  834  cat nginx-cm.yml 
+  835  kubectl create -f nginx-cm.yml 
+  836  kubectl exec -it nginx-cm /bin/bash
+  837  kubectl get pod | grep nginx
+  838  kubectl describe pods nginx-cm | less
+  839  cat 
+  840  cat nginx-custom-config.conf
+  841  cat 
+  842  cat nginx-custom-config.conf 
+  843  history | less
+  844  vim nginx-cm.yml 
+  845  kubectl get pods --show-labels --selector=web
+  846  kubectl get pods --show-labels
+  847  kubectl get pods --show-labels --selector=role
+  848  kubectl get pods --selector=role
+  849  vi nginx-cm.yml 
+  850  kubectl exec -it nginx-cm -- df -h
+  851  df -h
+  852  kubectl exec -it nginx-cm -- /bin/bash
+  853  ls
+  854  kubectl get cm
+  855  kubectl get cm nginx-cm 
+  856  kubectl get cm nginx-cm -o yaml
+  857  vim nginx-custom-config.conf 
+  858  history | lss
+  859  history | lss
+  860  history | less
+  861  kubectl exec -it nginx-cm -- /bin/bash
+  862  cat nginx-cm.yml | less
+  863  kubectl create cm myconfig --from-literal color=redd
+  864  kubectl get cm myconfig -o yaml
+  865  kubectl get cm
+  866  vim test-cm-pod.yaml 
+  867  kubectl create -f test-cm-pod.yaml 
+  868  kubectl describe pod test-pod 
+  869  kubectl describe pod test-pod  | less
+  870  vim test-cm-pod.yaml 
+  871  kubectl exec -it test-pod -- sh
+  872  vim test-cm-pod.yaml 
+  873  kubectl get pods | grep test
+  874  vim test-cm-pod.yaml 
+  875  TMOUT=0
+  876  clear
+  877  history | less
+  878  echo $HISTFILESIZE
+  879  echo $HISTSIZE
+  880  vi ~/.bashrc 
+  881  vi /etc/bashrc 
+  882  cd cka/
+  883  ls
+  884  kubectl get pods
+  885  kubectl get nodes
+  886  kubectl get secrets
+  887  kubectl create secret generic secretstuff --from-literal=password=sravan123 --from-literal=user=cloud_user_sravan
+  888  kubectl get secrets
+  889  kubectl get secrets -o yaml
+  890  ls
+  891  ls -l | grep secret
+  892  cd ../kubernetes/
+  893  ls
+  894  vim pod-secret.yaml 
+  895  kubectl create -f pod-secret.yaml 
+  896  kubectl describe pod secretbox2 
+  897  3JhdmFuMTIz
+  898      user: Y2xvdWRfdXNlcl9zcmF2YW4=
+  899  kubectl exec -it secretbox2 -- /bin/sh
+  900  vim pod-secret.yaml 
+  901  env
+  902  kubectl create secret generic mysql --from-literal password=root-sravan
+  903  kubectl get secrets 
+  904  kubectl get secrets mysql -o yaml| less
+  905  vi pod-secret-as-var.yaml 
+  906  cat pod-secret-as-var.yaml 
+  907  kubectl get secrets
+  908  kubectl create -f pod-secret-as-var.yaml 
+  909  kubectl get pods | grep sql
+  910  kubectl  get resourcequotas 
+  911  kubectl get pods | grep sql
+  912  kubectl get nodes
+  913  kubectl describe nodes 
+  914  kubectl describe nodes shrabonidey12085c.mylabserver.com | less
+  915  kubectl utilization requests
+  916  kubectl top nodes
+  917  kubectl top node 
+  918  kubectl top pod
+  919  alias util='kubectl get nodes --no-headers | awk '\''{print $1}'\'' | xargs -I {} sh -c '\''echo {} ; kubectl describe node {} | grep Allocated -A 5 | grep -ve Event -ve Allocated -ve percent -ve -- ; echo '\'''
+  920  # Get CPU request total (we x20 because because each m3.large has 2 vcpus (2000m) )
+  921  alias cpualloc='util | grep % | awk '\''{print $1}'\'' | awk '\''{ sum += $1 } END { if (NR > 0) { print sum/(NR*20), "%\n" } }'\'''
+  922  # Get mem request total (we x75 because because each m3.large has 7.5G ram )
+  923  alias memalloc='util | grep % | awk '\''{print $5}'\'' | awk '\''{ sum += $1 } END { if (NR > 0) { print sum/(NR*75), "%\n" } }'\'''
+  924  util 
+  925  free -mt
+  926  kubectl get pods | grep sql
+  927  cat pod-secret-as-var.yaml 
+  928  kubectl get pods --selector=name
+  929  kubectl get pods --show-labels 
+  930  kubectl get pods --show-labels --selector=app
+  931  ls
+  932  vi pv-pod.yaml 
+  933  cd ..
+  934  ls
+  935  cd cka/
+  936  ls
+  937  vi init1.yaml 
+  938  grep -r web *
+  939  vi nginx-cm.yml 
+  940  kubectl get pods --show-labels  | grep sql
+  941  cat nginx-cm.yml 
+  942  kubectl get pods --show-labels  | grep sql
+  943  w
+  944  ps -ef | grep kubeclt
+  945  ps -ef | grep kubectl
+  946  kill -9 10075
+  947  kubectl exec -it mymysql -- /bin/bash
+  948  \
+  949  exit
+  950  mymysql
+  951  ps -fe | grep kubectl
+  952  kill 10414
+  953  kubectl exec -it mymysql -- sh
+  954  exit
+  955  TMOUT=0
+  956  cd /c
+  957  cd kubernetes/
+  958  ls
+  959  cat pod-secret-as-var.yaml 
+  960  ps -ef | grep kubectl
+  961  kill -9 10653
+  962  kubectl exec -it mymysql -- env
+  963  kubectl describe pod mymysql | less
+  964  !
+  965  ps -ef  | grep kubectl
+  966  kill -9 11037 11238
+  967  kubectl exec -it mymysql -- env
+  968  kubectl exec -it mymysql env
+  969  exit
+  970  vi pod-secret-as-var.yaml 
+  971  kubectl get pods | grep sql
+  972  cd ../kubernetes/
+  973  vim pod-secret.yaml 
+  974  kubectl create -f pod-secret.yaml 
+  975  kubectl delete pods mymysql 
+  976  kubectl get pods | grep sql
+  977  vi pod-secret.yaml 
+  978  vi pod-secret-as-var.yaml.yaml 
+  979  vi pod-secret-as-var.yaml 
+  980  cd ../cka/
+  981  cd ../kubernetes/
+  982  ls
+  983  vi pod-secret-as-var.yaml 
+  984  kubectl create -f pod-secret-as-var.yaml 
+  985  kubectl get pods | grep sql
+  986  kubectl get pods | grep sql | grep -i creat
+  987  kubectl get pods | grep sql | grep -i creat || echo "not created"
+  988  kubectl get pods | grep sql | grep -i creat
+  989  kubectl get pods | grep sql | grep -i creat || echo "not created"
+  990  kubectl get pods | grep sql | grep -i creat && echo "not created"
+  991  kubectl get pods | grep sql | grep -i creat && echo "not created" || echo "got created"
+  992  kubectl get pods | grep sql
+  993  kubectl get replicasets.apps 
+  994  kubectl delete pods mymysql2
+  995  kubectl get pods | grep sql
+  996  kubectl delete pods mymysql
+  997  kubectl create -f pod-secret.yaml 
+  998  kubectl create -f pod-secret-as-var.yaml 
+  999  kubectl get pdos
+ 1000  kubectl get pods | grep sql
+ 1001  kubectl get pods | grep sql | grep -i creat && echo "not created" || echo "got created"
+ 1002  kubectl get pods | grep sql | grep -i creat 2&>1 && echo "not created" || echo "got created"
+ 1003  kubectl get pods | grep sql | grep -i creat > /dev/null 2&>1 && echo "not created" || echo "got created"
+ 1004  kubectl get pods | grep sql
+ 1005  kubectl get pods
+ 1006  kubectl get nodes
+ 1007  ssh shrabonidey12085c.mylabserver.com
+ 1008  kubectl get nodes
+ 1009  ssh shrabonidey12085c.mylabserver.com
+ 1010  kubectl get pods
+ 1011  kubectl get pods nginx-cm 
+ 1012  kubectl get pods nginx-cm -o wide
+ 1013  TMOUT=0
+ 1014  ls
+ 1015  history | less
+ 1016  history >> history.backup-4-OCT-2020-kubernetes
